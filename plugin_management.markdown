@@ -1,0 +1,13 @@
+Vim Plug-in Management with Pathogen and Git
+(via http://mirnazim.org/writings/vim-plugins-i-use/)
+
+1.) Add a new plugin
+    :::bash
+    $ mv /path/to/plugin ~/.vim/bundle/plugin_name 
+    $ cd ~/.vim
+    $ git submodule add git://github.com/tpope/vim-fugitive.git bundle/fugitive
+    $ git submodule init && git submodule update
+
+2.) Pull latest upstream changes to plugins
+    :::bash
+    $ git submodule foreach git pull
