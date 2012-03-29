@@ -11,3 +11,10 @@ Vim Plug-in Management with Pathogen and Git
 2.) Pull latest upstream changes to plugins
     :::bash
     $ git submodule foreach git pull
+
+3.) Remove a plugin
+    (via http://stackoverflow.com/questions/1260748/how-do-i-remove-a-git-submodule)
+    1. Delete the relevant line from .gitmodules file
+    2. Delete the relevant section from .git/config
+    3. Run git rm --cached path_to_submodule (no trailing slash)
+    4. Commit and delete the now untracked submodule files

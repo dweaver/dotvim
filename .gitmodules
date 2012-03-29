@@ -25,6 +25,3 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
-[submodule "svncommand.vim"]
-	path = svncommand.vim
-	url = git://github.com/vim-scripts/svncommand.vim
