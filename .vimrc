@@ -1,5 +1,6 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+call pathogen#infect()
 
 let mapleader = ","
 
@@ -9,6 +10,7 @@ noremap <leader>O <Esc>:CommandTFlush<CR>
 noremap <leader>m <Esc>:CommandTBuffer<CR>
 
 filetype plugin on
+filetype indent on
 
 let g:tagbar_usearrows = 1
 nnoremap <leader>l :TagbarToggle<CR>
@@ -38,3 +40,6 @@ function! CWD()
     let curdir = substitute(getcwd(), '/home/danw', "~/", "g")
     return curdir
 endfunction
+
+set ignorecase
+
