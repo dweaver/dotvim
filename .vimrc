@@ -15,14 +15,6 @@ filetype indent on
 let g:tagbar_usearrows = 1
 nnoremap <leader>l :TagbarToggle<CR>
 
-" Solarized color scheme
-set background=dark
-let g:solarized_termtrans=1
-let g:solarized_termcolors=256
-let g:solarized_contrast="high"
-let g:solarized_visibility="high"
-colorscheme solarized
-
 " NERDTree
 nnoremap <leader>t :NERDTreeToggle<CR>
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.pyo$', '\.class$', '\.o$']
@@ -42,4 +34,9 @@ function! CWD()
 endfunction
 
 set ignorecase
+
+noremap tn :tabnew<CR>
+noremap tj :tabprevious<CR>
+noremap tk :tabnext<CR>
+
 
