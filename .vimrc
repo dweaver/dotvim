@@ -16,6 +16,7 @@ filetype indent on
 
 let g:tagbar_usearrows = 1
 nnoremap <leader>l :TagbarToggle<CR>
+
 " Solarized color scheme
 set background=dark
 let g:solarized_termtrans=1
