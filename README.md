@@ -1,6 +1,14 @@
 Vim Plug-in Management with Pathogen and Git
 (via http://mirnazim.org/writings/vim-plugins-i-use/)
 
+0.) Setup a new machine
+    :::bash
+    $ cd ~
+    $ git clone --recursive git@github.com:dweaver/dotvim.git .vim
+    $ ln -s .vim/.vimrc .vimrc
+    $ ln -s .vim/Xresources .Xresources
+
+
 1.) Add a new plugin
     :::bash
     $ mv /path/to/plugin ~/.vim/bundle/plugin_name 
@@ -18,3 +26,8 @@ Vim Plug-in Management with Pathogen and Git
     2. Delete the relevant section from .git/config
     3. Run git rm --cached path_to_submodule (no trailing slash)
     4. Commit and delete the now untracked submodule files
+Vim Settings Setup Guide
+========================
+
+git clone git@github.com:dweaver/dotvim.git .vim
+
