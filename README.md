@@ -26,8 +26,4 @@ Vim Plug-in Management with Pathogen and Git
     2. Delete the relevant section from .git/config
     3. Run git rm --cached path_to_submodule (no trailing slash)
     4. Commit and delete the now untracked submodule files
-Vim Settings Setup Guide
-========================
-
-git clone git@github.com:dweaver/dotvim.git .vim
 
