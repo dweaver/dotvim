@@ -18,8 +18,8 @@ let g:tagbar_usearrows = 1
 nnoremap <leader>l :TagbarToggle<CR>
 
 " Solarized color scheme
+syntax enable
 set background=dark
-let g:solarized_termtrans=1
 let g:solarized_termcolors=256
 let g:solarized_contrast="high"
 let g:solarized_visibility="high"
@@ -51,8 +51,8 @@ set shiftwidth=4
 set expandtab
 
 " Shortcuts for navigating (<F7>, <F8>) and creating (<F6>, ',n') tabs
-noremap <F7> :tabp<CR>
-noremap <F8> :tabn<CR>
+noremap tj :tabp<CR>
+noremap tk :tabn<CR>
 noremap <F6> :tabe 
 noremap <Leader>n :tabe <C-R>=expand("%:p:h") . "/" <CR>
 
