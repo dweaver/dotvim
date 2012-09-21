@@ -72,3 +72,9 @@ endfunction
 " NB: this supports "rp that replaces the selection by the contents of @r
 vnoremap <silent> <expr> p <sid>Repl()
 
+" Set indentation special for onep.py 
+" au BufNewFile,BufRead onep.py setlocal tabstop=2 softtabstop=2 shiftwidth=2 textwidth=80 smarttab expandtab 
+
+" look for modeline in first 100 lines of files (e.g. for python files
+" with 2 character indentation)
+set modelines=100
