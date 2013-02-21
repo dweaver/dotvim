@@ -44,6 +44,8 @@ function! CWD()
 endfunction
 
 set ignorecase
+" /foo matches foo and fOo, but /FOO only matches FOO
+set smartcase
 
 set smartindent
 set tabstop=4
@@ -78,3 +80,12 @@ vnoremap <silent> <expr> p <sid>Repl()
 " look for modeline in first 100 lines of files (e.g. for python files
 " with 2 character indentation)
 set modelines=100
+
+" go up/down by one on-screen line
+nmap j gj
+nmap k gk
+
+" highlight matches as I type
+set incsearch
+
+
