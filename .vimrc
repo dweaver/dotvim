@@ -20,6 +20,7 @@ nnoremap <leader>l :TagbarToggle<CR>
 " Solarized color scheme
 syntax enable
 set background=dark
+let g:solarized_termtrans=1
 let g:solarized_termcolors=256
 let g:solarized_contrast="high"
 let g:solarized_visibility="high"
@@ -52,7 +53,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
-" Shortcuts for navigating (<F7>, <F8>) and creating (<F6>, ',n') tabs
+" Shortcuts for navigating (tj, tk) and creating (<F6>, ',n') tabs
 noremap tj :tabp<CR>
 noremap tk :tabn<CR>
 noremap <F6> :tabe 
@@ -88,4 +89,5 @@ nmap k gk
 " highlight matches as I type
 set incsearch
 
-
+" Quickfix - next error
+noremap <leader>e <Esc>:cn<CR>
