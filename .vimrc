@@ -53,6 +53,15 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+" turn off smartindent for python (so # doesn't go to the beginning of the line)
+au! FileType python setl nosmartindent
+
+" close quickfix window when I close a file
+aug QFClose
+  au!
+  au WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&buftype") == "quickfix"|q|endif
+aug END
+
 " Shortcuts for navigating (tj, tk) and creating (<F6>, ',n') tabs
 noremap tj :tabp<CR>
 noremap tk :tabn<CR>
