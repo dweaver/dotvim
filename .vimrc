@@ -98,5 +98,13 @@ nmap k gk
 " highlight matches as I type
 set incsearch
 
-" Quickfix - next error
+" Quickfix - next/prev error
 noremap <leader>e <Esc>:cn<CR>
+noremap <leader>E <Esc>:cN<CR>
+
+" No python folding
+let g:pymode_folding = 0
+
+" No beeping
+set visualbell           " don't beep
+set noerrorbells
