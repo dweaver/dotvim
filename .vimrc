@@ -108,3 +108,9 @@ let g:pymode_folding = 0
 " No beeping
 set visualbell           " don't beep
 set noerrorbells
+
+" github flavored markedown
+augroup markdown
+    au!
+    au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
+augroup END

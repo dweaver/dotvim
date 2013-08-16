@@ -25,3 +25,10 @@
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
 	url = https://github.com/klen/python-mode.git
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+    url = https://github.com/tpope/vim-markdown
+[submodule "bundle/vim-flavored-markdown"]
+	path = bundle/vim-flavored-markdown
+	url = git://github.com/jtratner/vim-flavored-markdown.git
+
