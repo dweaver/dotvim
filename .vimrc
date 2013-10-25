@@ -56,6 +56,8 @@ set expandtab
 " turn off smartindent for python (so # doesn't go to the beginning of the line)
 au! FileType python setl nosmartindent
 
+au! FileType jade setl sw=2 ts=2 sts=2
+
 " close quickfix window when I close a file
 aug QFClose
   au!

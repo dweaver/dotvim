@@ -1,4 +1,5 @@
 Vim Plug-in Management with Pathogen and Git
+--------------------------------------------
 (via http://mirnazim.org/writings/vim-plugins-i-use/)
 
 0.) Setup a new machine
@@ -7,7 +8,6 @@ Vim Plug-in Management with Pathogen and Git
     $ git clone --recursive git@github.com:dweaver/dotvim.git .vim
     $ ln -s .vim/.vimrc .vimrc
     $ ln -s .vim/Xresources .Xresources
-
 
 1.) Add a new plugin
     :::bash
