@@ -87,3 +87,4 @@ mkdir -p $WORKON_HOME
 source /usr/local/bin/virtualenvwrapper.sh
 
 export GOPATH=~/prj/go
+export PATH=$PATH:$GOPATH/bin
