@@ -43,15 +43,9 @@ git_prompt ()
 }
 PS1='\[\033[0;33m\]\u\[\033[0m\]@\[\033[0;33m\]\h\[\033[0m\]:\[\033[0;34m\]\w\[\033[0m\]$(git_prompt)\n\$ '
 
-export WORKON_HOME=~/Envs
-mkdir -p $WORKON_HOME
-source /usr/local/bin/virtualenvwrapper.sh
 PATH=/opt/local/bin:$PATH
 
 alias ipy='ipython'
-
-# added by Anaconda 1.6.1 installer
-export PATH="//anaconda/bin:$PATH"
 
 # path bookmarks
 export MARKPATH=$HOME/.marks
@@ -87,3 +81,9 @@ pretty() {
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+export WORKON_HOME=~/Envs
+mkdir -p $WORKON_HOME
+source /usr/local/bin/virtualenvwrapper.sh
+
+export GOPATH=~/prj/go
