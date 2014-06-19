@@ -38,9 +38,12 @@
 [submodule "bundle/vim-golang"]
 	path = bundle/vim-golang
 	url = git@github.com:jnwhiteh/vim-golang.git
-[submodule "bundle/vim-gocode"]
-	path = bundle/vim-gocode
-	url = git@github.com:Blackrush/vim-gocode.git
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = git@github.com:ervandew/supertab.git
+[submodule "bundle/unimpaired"]
+	path = bundle/unimpaired
+	url = git://github.com/tpope/vim-unimpaired.git
+[submodule "bundle/coffee-script"]
+	path = bundle/coffee-script
+	url = git@github.com:kchmck/vim-coffee-script.git

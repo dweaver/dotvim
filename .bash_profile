@@ -1,3 +1,5 @@
+ssh-add ~/.ssh/id_rsa &>/dev/null
+
 #PS1='\[\033[0;33m\]\u\[\033[0m\]@\[\033[0;32m\]\h\[\033[0m\]:\[\033[0;34m\]\w\[\033[0m\]\$ '
 export PATH=/usr/local/bin:$PATH
 export CLICOLOR=1
@@ -41,7 +43,7 @@ git_prompt ()
 
   echo " [$git_branch${status}]"
 }
-PS1='\[\033[0;33m\]\u\[\033[0m\]@\[\033[0;33m\]\h\[\033[0m\]:\[\033[0;34m\]\w\[\033[0m\]$(git_prompt)\n\$ '
+PS1='\[\033[0;33m\]\u\[\033[0m\]@\[\033[0;33m\]\h\[\033[0m\]:\[\033[0;37m\]\w\[\033[0m\]$(git_prompt)\n\$ '
 
 PATH=/opt/local/bin:$PATH
 
@@ -88,3 +90,31 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 export GOPATH=~/prj/go
 export PATH=$PATH:$GOPATH/bin
+
+set -o vi
+alias gla='git log --all --decorate --graph --oneline'
+
+# for cocoapods
+export PATH=$PATH:/usr/local/Cellar/ruby/2.0.0-p247/bin/
+
+# for arcanist
+export PATH=$PATH:~/prj/exosite/facebook/arcanist/bin
+source ~/prj/exosite/facebook/arcanist/resources/shell/bash-completion
+
+alias 1pdump='sudo tcpdump -A -s 0 -i all tcp and host m2.exosite.com'
+alias tdump='sudo tcpdump -A -s 0 -i all tcp and host '
+
+alias exod='exo --http --host m2-dev.exosite.com '
+
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/Users/danw 
+
+export PATH=$PATH:~/prj/go/src/github.com/dweaver/halfp
+
+# Setting PATH for Python 3.4
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+export PATH
+alias ..='cd ..'
+alias ...='cd ..\..'
+export HISTSIZE=10000
