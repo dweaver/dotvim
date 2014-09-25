@@ -1,0 +1,10 @@
+defscrollback 65536
+shelltitle _
+
+# SSH Agent fix explained at http://www.jukie.net/~bart/blog/20060920093957
+unsetenv SSH_AUTH_SOCK
+setenv SSH_AUTH_SOCK $HOME/.screen/ssh-auth-sock.$HOSTNAME
+
+# Display some neat hardstatus stuff at the bottom (thanks James)
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B}%Y-%m-%d %{W}%c %{g}]'

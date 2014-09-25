@@ -105,6 +105,7 @@ alias 1pdump='sudo tcpdump -A -s 0 -i all tcp and host m2.exosite.com'
 alias tdump='sudo tcpdump -A -s 0 -i all tcp and host '
 
 alias exod='exo --http --host m2-dev.exosite.com '
+alias exodress='exo --http --host onepcass-dress.exosite.biz '
 
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/Users/danw 
@@ -114,7 +115,16 @@ export PATH=$PATH:~/prj/go/src/github.com/dweaver/halfp
 # Setting PATH for Python 3.4
 # The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin/
 export PATH
 alias ..='cd ..'
 alias ...='cd ..\..'
 export HISTSIZE=10000
+alias rrun='rerun foreman start web'
+
+alias psql=/Applications/Postgres.app/Contents/Versions/9.3/bin/psql
+
+if [ -f ~/.config/exercism/exercism_completion.bash ]; then
+    . ~/.config/exercism/exercism_completion.bash
+fi

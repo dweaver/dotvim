@@ -7,6 +7,8 @@ Vim Plug-in Management with Pathogen and Git
     $ cd ~
     $ git clone --recursive git@github.com:dweaver/dotvim.git .vim
     $ ln -s .vim/.vimrc .vimrc
+    $ ln -s .vim/.screenrc .screenrc
+    $ ln -s .vim/.bash_profile .bash_profile
     $ ln -s .vim/Xresources .Xresources
 
 1.) Add a new plugin
