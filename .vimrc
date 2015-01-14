@@ -120,3 +120,5 @@ let &t_Co=256
 autocmd FileType css setlocal shiftwidth=2 tabstop=2
 autocmd FileType scss setlocal shiftwidth=2 tabstop=2
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
+
+let g:syntastic_javascript_checkers = ['jshint']

@@ -6,7 +6,7 @@ export CLICOLOR=1
 export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
 
 
-alias gst='git status '
+alias gs='git status '
 alias gc='git commit '
 alias gca='git commit -a '
 alias ga='git add '
@@ -101,11 +101,12 @@ export PATH=$PATH:/usr/local/Cellar/ruby/2.0.0-p247/bin/
 export PATH=$PATH:~/prj/exosite/facebook/arcanist/bin
 source ~/prj/exosite/facebook/arcanist/resources/shell/bash-completion
 
-alias 1pdump='sudo tcpdump -A -s 0 -i all tcp and host m2.exosite.com'
-alias tdump='sudo tcpdump -A -s 0 -i all tcp and host '
+alias dump1p='sudo tcpdump -A -s 0 -i all tcp and host m2.exosite.com'
+alias dumpejs='sudo tcpdump -A -s 0 -i all tcp and host exositejs.herokuapp.com'
+alias dumpt='sudo tcpdump -A -s 0 -i all tcp and host '
 
 alias exod='exo --http --host m2-dev.exosite.com '
-alias exodress='exo --http --host onepcass-dress.exosite.biz '
+alias exock='exo --http --host=127.0.0.1 --port=3001 '
 
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/Users/danw 
@@ -116,14 +117,14 @@ export PATH=$PATH:~/prj/go/src/github.com/dweaver/halfp
 # The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
 
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin/
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin/
 export PATH
 alias ..='cd ..'
 alias ...='cd ..\..'
 export HISTSIZE=10000
 alias rrun='rerun foreman start web'
 
-alias psql=/Applications/Postgres.app/Contents/Versions/9.3/bin/psql
+alias psql=/Applications/Postgres.app/Contents/Versions/9.4/bin/psql
 
 if [ -f ~/.config/exercism/exercism_completion.bash ]; then
     . ~/.config/exercism/exercism_completion.bash
