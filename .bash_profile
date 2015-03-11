@@ -103,6 +103,7 @@ source ~/prj/exosite/facebook/arcanist/resources/shell/bash-completion
 
 alias dump1p='sudo tcpdump -A -s 0 -i all tcp and host m2.exosite.com'
 alias dumpejs='sudo tcpdump -A -s 0 -i all tcp and host exositejs.herokuapp.com'
+alias dumpwb='sudo tcpdump -A -s 0 -i all tcp and host weaver.exosite.com'
 alias dumpt='sudo tcpdump -A -s 0 -i all tcp and host '
 
 alias exod='exo --http --host m2-dev.exosite.com '
@@ -129,3 +130,5 @@ alias psql=/Applications/Postgres.app/Contents/Versions/9.4/bin/psql
 if [ -f ~/.config/exercism/exercism_completion.bash ]; then
     . ~/.config/exercism/exercism_completion.bash
 fi
+
+alias epoch='date -u -r '
