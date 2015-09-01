@@ -80,7 +80,7 @@ pretty() {
     echo $1 | python -mjson.tool
 }
 
-export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
+#export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
@@ -132,3 +132,17 @@ if [ -f ~/.config/exercism/exercism_completion.bash ]; then
 fi
 
 alias epoch='date -u -r '
+
+# added by Miniconda3 3.9.1 installer
+#export PATH="/Users/danw/miniconda3/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/danw/google-cloud-sdk/path.bash.inc'
+
+# The next line enables bash completion for gcloud.
+source '/Users/danw/google-cloud-sdk/completion.bash.inc'
+
+alias pdj="ssh jenkins-python -t 'cd /var/lib/jenkins/workspace/report-portals-domain-journey; bash'"
+alias pub="ssh jenkins-python -t 'cd /var/lib/jenkins/workspace/report-portals-usage-billing-users; bash'"
+alias fleet="ssh jenkins-python -t 'cd /var/lib/jenkins/workspace/report-fleet; bash'"
+source ~/.exoline_autocomplete
