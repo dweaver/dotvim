@@ -47,3 +47,6 @@
 [submodule "bundle/coffee-script"]
 	path = bundle/coffee-script
 	url = git@github.com:kchmck/vim-coffee-script.git
+[submodule "bundle/vim-elixir"]
+	path = bundle/vim-elixir
+	url = https://github.com/elixir-lang/vim-elixir.git

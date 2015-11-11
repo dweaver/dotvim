@@ -1,4 +1,4 @@
-ssh-add ~/.ssh/id_rsa &>/dev/null
+#ssh-add ~/.ssh/id_rsa &>/dev/null
 
 #PS1='\[\033[0;33m\]\u\[\033[0m\]@\[\033[0;32m\]\h\[\033[0m\]:\[\033[0;34m\]\w\[\033[0m\]\$ '
 export PATH=/usr/local/bin:$PATH
@@ -97,10 +97,6 @@ alias gla='git log --all --decorate --graph --oneline'
 # for cocoapods
 export PATH=$PATH:/usr/local/Cellar/ruby/2.0.0-p247/bin/
 
-# for arcanist
-export PATH=$PATH:~/prj/exosite/facebook/arcanist/bin
-source ~/prj/exosite/facebook/arcanist/resources/shell/bash-completion
-
 alias dump1p='sudo tcpdump -A -s 0 -i all tcp and host m2.exosite.com'
 alias dumpejs='sudo tcpdump -A -s 0 -i all tcp and host exositejs.herokuapp.com'
 alias dumpwb='sudo tcpdump -A -s 0 -i all tcp and host weaver.exosite.com'
@@ -132,6 +128,7 @@ if [ -f ~/.config/exercism/exercism_completion.bash ]; then
 fi
 
 alias epoch='date -u -r '
+alias now='date +%s'
 
 # added by Miniconda3 3.9.1 installer
 #export PATH="/Users/danw/miniconda3/bin:$PATH"
@@ -145,4 +142,6 @@ source '/Users/danw/google-cloud-sdk/completion.bash.inc'
 alias pdj="ssh jenkins-python -t 'cd /var/lib/jenkins/workspace/report-portals-domain-journey; bash'"
 alias pub="ssh jenkins-python -t 'cd /var/lib/jenkins/workspace/report-portals-usage-billing-users; bash'"
 alias fleet="ssh jenkins-python -t 'cd /var/lib/jenkins/workspace/report-fleet; bash'"
+alias hackdocs="cd /Users/danw/prj/exosite/exohack/docs && vi exohack/docs/index.md"
+
 source ~/.exoline_autocomplete
